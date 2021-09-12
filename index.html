@@ -1,243 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Home</title>
-<meta charset="utf-8">
-<meta name="format-detection" content="telephone=no" />
-<link rel="icon" href="images/favicon.ico">
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery.js"></script>
-<script src="js/jquery-migrate-1.1.1.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/script.js"></script> 
-<script src="js/superfish.js"></script>
-<script src="js/jquery.equalheights.js"></script>
-<script src="js/jquery.mobilemenu.js"></script>
-<script src="js/tmStickUp.js"></script>
-<script src="js/jquery.ui.totop.js"></script>
-<script>
- $(window).load(function(){
-  $().UItoTop({ easingType: 'easeOutQuart' });
-  $('#stuck_container').tmStickUp({});  
- }); 
-</script>
-<!--[if lt IE 8]>
- <div style=' clear: both; text-align:center; position: relative;'>
-   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-   </a>
-</div>
-<![endif]-->
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<link rel="stylesheet" media="screen" href="css/ie.css">
-<![endif]-->
- 
-</script>
-<!--<script>
-  !function(){var e,t="undefined"==typeof window?{}:window,r=t.userflow;if(!r){var n="https://js.userflow.com/";r=t.userflow={_stubbed:!0};var o=t.USERFLOWJS_QUEUE=t.USERFLOWJS_QUEUE||[],s=function(e){r[e]=function(){var t=Array.prototype.slice.call(arguments);u(),o.push([e,null,t])}},a=function(e){r[e]=function(){var t,r=Array.prototype.slice.call(arguments);u();var n=new Promise((function(e,r){t={resolve:e,reject:r}}));return o.push([e,t,r]),n}},i=!1,u=function(){if(!i){i=!0;var e=document.createElement("script");e.async=!0;var r=t.USERFLOWJS_ENV_VARS||{};"es2020"===(r.USERFLOWJS_BROWSER_TARGET||function(e){for(var t=[[/Edg\//,/Edg\/(\d+)/,80],[/OPR\//,/OPR\/(\d+)/,67],[/Chrome\//,/Chrome\/(\d+)/,80],[/Safari\//,/Version\/(\d+)/,14],[/Firefox\//,/Firefox\/(\d+)/,74]],r=0;r<t.length;r++){var n=t[r],o=n[0],s=n[1],a=n[2];if(e.match(o)){var i=e.match(new RegExp(s));if(i&&parseInt(i[1],10)>=a)return"es2020";break}}return"legacy"}(navigator.userAgent))?(e.type="module",e.src=r.USERFLOWJS_ES2020_URL||n+"es2020/userflow.js"):e.src=r.USERFLOWJS_LEGACY_URL||n+"legacy/userflow.js",e.onerror=function(){i=!1,console.error("Could not load Userflow.js")},document.head.appendChild(e)}};s("_setTargetEnv"),s("init"),s("off"),s("on"),s("prepareAudio"),s("registerCustomInput"),s("remount"),s("reset"),s("setCustomInputSelector"),s("setCustomNavigate"),s("setCustomScrollIntoView"),s("setInferenceAttributeFilter"),s("setInferenceAttributeNames"),s("setInferenceClassNameFilter"),s("setScrollPadding"),s("setShadowDomEnabled"),s("setUrlFilter"),a("endAll"),a("endAllFlows"),a("endChecklist"),a("group"),a("identify"),a("identifyAnonymous"),a("start"),a("startFlow"),a("startWalk"),a("track"),a("updateGroup"),a("updateUser"),e=!1,r["isIdentified"]=function(){return e}}}();
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+</style>
+<body>
 
-  userflow.init('ct_yma6vmh3vnfzfovcaa3xdfvzdu')
-  userflow.identify('123', {
-    name: '123',
-    email: '321',
-    signed_up_at: '1111',
-  })
-</script>-->
-</head>
-<body class="page1" id="top">
-<!--==============================
-              header
-=================================-->
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="grid_12 rel">
-        <h1>
-          <a href="index.html">
-            <img src="images/logo.png" alt="Logo alt">
-          </a>
-        </h1>
-      </div>
-    </div>
-  </div>
-  <section id="stuck_container">
-  <!--==============================
-              Stuck menu
-  =================================-->
-    <div class="container">
-      <div class="row">
-        <div class="grid_12 ">
-          <div class="navigation ">
-            <nav>
-              <ul class="sf-menu">
-               <li class="current"><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="services.html">Services</a></li>
-               <li><a href="blog.html">Blog</a></li>
-               <li><a href="contacts.html">Contacts</a></li>
-             </ul>
-            </nav>
-            <div class="clear"></div>
-          </div>       
-         <div class="clear"></div>  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
-     </div> 
-    </div> 
-  </section>
-  <section class="page1_header">
-    <div class="container">
-      <div class="row">
-        <div class="grid_4">
-          <a href="#" class="banner "><div class="maxheight">
-            <div class="fa fa-globe"></div>Global Research</div>
-          </a>
-          <a href="#" class="banner "><div class="maxheight">
-            <div class="fa fa-lightbulb-o"></div>Creative Ideas</div>
-          </a>
-          <a href="#" class="banner "><div class="maxheight1">
-            <div class="fa fa-cog"></div>New Services</div>
-          </a>
-          <a href="#" class="banner "><div class="maxheight1">
-            <div class="fa fa-briefcase"></div>Pro Management</div>
-          </a>
-        </div>
-        <div class="grid_5">
-          <h2>Strong <br> Stable <br> Safe</h2>
-          We help you run your business  in a successful way
-        </div>
-      </div>
     </div>
-  </section>
-</header>
-<div class="block-1">
-  <div class="container">
-    <div class="row">
-      <div class="grid_3">
-        <div class="block-1_count">10</div>
-        Years of <br> Experience
-        <div class="clear"></div>
-      </div>
-      <div class="grid_3">
-        <div class="block-1_count">30</div>
-        Successful <br> Projects
-        <div class="clear"></div>
-      </div>
-      <div class="grid_3">
-        <div class="block-1_count">20</div>
-        Partner <br> Projects
-        <div class="clear"></div>
-      </div>
-      <div class="grid_3">
-        <a href="#" class="support"><img src="images/support.png" alt=""></a>
-      </div>
-    </div>
-  </div>
 </div>
-<!--=====================
-          Content
-======================-->
-<section id="content"><div class="ic">More Website Templates @ TemplateMonster.com - July 28, 2014!</div>
-  <div class="container">
-    <div class="row">
-      <div class="grid_10 preffix_1 ta__center">
-        <div class="greet">
-          <h2 class="head__1">
-            Welcome
-          </h2>
-          <p>Read more about the <a href=" http://blog.templatemonster.com/free-website-templates/" rel="nofollow" class="color1">freebie</a> here. <br> Go to TemplateMonster.com and find more <a href="http://www.templatemonster.com/properties/topic/business-services/" rel="nofollow" class="color1">goodies</a> of this kind </p>
-          Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet site amet est vel, commodo venenatis eros. Fusce adipiscing quam id risus sagittis, non consequat lacus interdum. nulla, eu sodales arcu. Quisque viverra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan 
-        </div>
-      </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h1 class="w3-xxlarge">Le Catering</h1>
     </div>
-  </div>
-  <article class="content_gray">
-    <div class="container">
-      <div class="row">
-        <div class="grid_7">
-          <h3>Our Advantages</h3>
-          <div class="block-2">
-            <img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Experience</a></div>
-              <p>Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert varius augue, eu consectetur ligulaam dui eros dertoli.</p>Fusce adipiscing quam id risus sagittis, non consequat lacus interdum. Proin ut tinciduntol nulla, eu sodales vertomin
-              <br>
-              <a href="#" class="link-1">more</a>
-            </div>
-          </div>
-          <div class="block-2">
-            <img src="images/page1_img2.jpg" alt="" class="img_inner fleft">
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Marketing</a></div>
-              <p>Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert varius augue, eu consectetur ligulaam dui eros dertoli.</p>Fusce adipiscing quam id risus sagittis, non consequat lacus interdum. Proin ut tinciduntol nulla, eu sodales vertomin
-              <br>
-              <a href="#" class="link-1">more</a>
-            </div>
-          </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
         </div>
-        <div class="grid_4 preffix_1">
-          <h3>Testimonials</h3>
-          <blockquote class="bq1">
-            <p>“Curabitur vel lorem sit amet nulla erero fermentum. In vitae varius auguectetu ligula. Etiam dui eros, laoreet site am est vel commodo venenatisipiscing... ”</p>
-            <span>Liza Jons</span>
-          </blockquote>
-          <blockquote class="bq1">
-            <p>“Burabitur vel lorem sit amet nulla erero fermentum. In vitae varius auguectetu ligula. Etiam dui eros, laoreet site am ast vel commodo venenatisipiscino... ”</p>
-            <span>Mark Brown</span>
-          </blockquote>
+
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">About Catering</h1><br>
+            <h5 class="w3-center">Tradition since 1889</h5>
+            <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+            <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-      </div>
     </div>
-  </article>
-  <div class="container">
-    <div class="row">
-      <div class="grid_5">
-        <h4>About Company</h4>
-        <img src="images/page1_img3.jpg" alt="" class="img_inner fleft">
-          <p>Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert arius augue, eu consectetur </p>
-          <p class="offset__1">Eligulaam dui eros dertolisce dertolo adipiscing quam id risus sagittis</p>
-          Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert rius augue, eu consectetur larem dui eros dertolisce dertolo 
-      </div>
-      <div class="grid_4">
-        <h4>Solutions</h4>
-        <ul class="list-1">
-          <li><a href="#">Vivamus at magna non nunc tristique </a></li>
-          <li><a href="#">Aliquam nibh ante, egestas id</a></li>
-          <li><a href="#">Ommodo luctus libero</a></li>
-          <li><a href="#">Faucibus malesuada faucibusonec </a></li>
-          <li><a href="#">Laoreet metus id laoreet</a></li>
-          <li><a href="#">Jalesuadaorem ipsum dolor sit ame</a></li>
-        </ul>
-      </div>
-      <div class="grid_3">
-        <h4>Contact Info</h4>
-        <address>
-          <ul class="cont_address">
-            <li>8901 Marmora Road, Glasgow, D04 89GR</li>
-            <li>+1 (800) 123 9876</li>
-            <li><a href="#">info@demolink.org</a></li>
-            <li><a href="#">www.demolink.org</a></li>
-          </ul>
-        </address>
-      </div>
-    </div>
-  </div>
-</section>
-<!--==============================
-              footer
-=================================-->
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="grid_12"> 
-        <div class="copyright"><span class="brand">Stable</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
-          <div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>
+
+    <hr>
+
+    <!-- Menu Section -->
+    <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+            <h1 class="w3-center">Our Menu</h1><br>
+            <h4>Bread Basket</h4>
+            <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+            <h4>Belgian Waffle</h4>
+            <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+            <h4>Scrambled eggs</h4>
+            <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+            <h4>Blueberry Pancakes</h4>
+            <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
         </div>
-      </div>
-    </div>
-  </div>  
-</footer>
-<a href="#" id="toTop" class="fa fa-chevron-up"></a>
-</body>
-</html>
